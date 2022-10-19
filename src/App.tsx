@@ -7,11 +7,11 @@ const App: React.FC = () => {
    let temperatureColor: string = "neutral";
 
    if (temperatureValue <= 10) {
-      temperatureColor="cold";
+      temperatureColor = "cold";
    } else if (temperatureValue > 10 && temperatureValue < 20) {
-      temperatureColor="neutral";
+      temperatureColor = "neutral";
    } else {
-      temperatureColor="hot";
+      temperatureColor = "hot";
    };
 
    const increaseTemperature = () => {

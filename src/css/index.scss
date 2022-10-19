@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 body {
    font-family: sans-serif;
    text-align: center;
@@ -27,14 +29,14 @@ body {
 .temperature-display {
    display: flex;
    border-radius: 50%;
-   color: #ffffff;
+   color: $colorWhite;
    height: 220px;
    width: 220px;
    text-align: center;
    justify-content: center;
    align-items: center;
    font-size: 48px;
-   border: 3px #ffffff solid;
+   border: 3px $colorWhite solid;
 }
 
 button {
@@ -42,12 +44,12 @@ button {
    height: 80px;
    width: 80px;
    font-size: 32px;
-   color: #ffffff;
+   color: $colorWhite;
    background: rgb(105, 104, 104);
-   border: 2px #ffffff solid;
+   border: 2px $colorWhite solid;
 
    &:hover {
-      background: rgb(184, 184, 184);
+      background: $colorLightGray;
       cursor: pointer;
    }
 
@@ -63,7 +65,7 @@ button {
 }
 
 .neutral {
-   background: rgb(184, 184, 184);
+   background: $colorLightGray;
 }
 
 .cold {
